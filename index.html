@@ -1,0 +1,1210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- basic -->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- mobile metas -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+<!-- site metas -->
+<title>Window Tint</title>
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta name="author" content="">	
+<!-- bootstrap css -->
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<!-- style css -->
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<!-- Responsive-->
+<link rel="stylesheet" href="css/responsive.css">
+<!-- Tweaks for older IEs-->
+<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+<!-- owl stylesheets --> 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+
+</head>
+<body>
+	<img class="brg" src="./images/bgr.jpg">
+	<!-- car section start -->
+	<div class="layout_padding car_section">
+		<div class="container-fluid">
+			<div class="row image_size">
+				<div class="img_box" id="image-container">
+					<img id="carSort" src="./images/MAIN_CAR/Hatchback-Mockup-GRAY-FULL.png", alt="mainCar" style="opacity: 1;">
+					<img id="suvSort" src="./images/SUV/SUV-GRAY.png" alt="suv" style="opacity: 0;">
+					<div id="firstlayer" style="position:relative; width:100%">
+						<img class="layer1" id="first_back2" src="./images/MAIN_CAR/1.png" style="opacity: 0;">	
+						<div id="area1" style="height: 110px; position:absolute; z-index:1000;" onmousewheel="backback()"></div>
+					</div>
+					<div id="secondlayer" style="position:relative; width:100%">
+						<img class="layer2" id="first_side2" src="./images/MAIN_CAR/2.png" style="opacity: 0;">	
+						<div id="area2" style="height: 120px; position:absolute; z-index:1000;" onmousewheel="backside()"></div>
+					</div>
+					<div id="thirdlayer" style="position:relative; width:100%">
+						<img class="layer3" id="second_side2" src="./images/MAIN_CAR/3.png" style="opacity: 0;">	
+						<div id="area3" style="height: 110px; position:absolute; z-index:1000;" onmousewheel="backfront()"></div>
+					</div>
+					<img class="layer4" id="third_front1" src="./images/MAIN_CAR/4.png" style="opacity: 0;">	
+					<div id="fourthlayer" style="position:relative; width:100%">
+						<img class="layer5" id="third_front2" src="./images/MAIN_CAR/5.png" style="opacity: 0;">	
+						<div id="area5" style="height: 110px; position:absolute; z-index:1000;" onmousewheel="frontfront()"></div>
+					</div>
+					<div id="fifthlayer" style="position:relative; width:100%">
+						<img class="layer6" id="second_side1" src="./images/MAIN_CAR/6.png" style="opacity: 0;">	
+						<div id="area6" style="height: 110px; position:absolute; z-index:1000;" onmousewheel="frontside()"></div>
+					</div>
+					<div id="sixthlayer" style="position:relative; width:100%">
+						<img class="layer7" id="first_side1" src="./images/MAIN_CAR/7.png" style="opacity: 0;">	
+						<div id="area7" style="height: 100px; position:absolute; z-index:1000;" onmousewheel="frontback()"></div>
+					</div>
+					<div id="sevenlayer" style="position:relative; width:100%">
+						<img class="layer8" id="suvback1" src="./images/SUV/tint-1.png" style="opacity: 0;">	
+						<div id="area11" style="height: 100px; position:absolute; z-index:10;" onmousewheel="suvback1()"></div>
+					</div>
+					<div id="eightlayer" style="position:relative; width:100%">
+						<img class="layer9" id="backside1" src="./images/SUV/tint-2.png" style="opacity: 0;">	
+						<div id="area22" style="height: 100px; position:absolute; z-index:10;" onmousewheel="backside1()"></div>
+					</div>
+					<div id="ninelayer" style="position:relative; width:100%">
+						<img class="layer10" id="backside2" src="./images/SUV/tint-7.png" style="opacity: 0;">	
+						<div id="area33" style="height: 100px; position:absolute; z-index:10;" onmousewheel="backside2()"></div>
+					</div>
+					<div id="elevenlayer" style="position:relative; width:100%">
+						<img class="layer11" id="frontside1" src="./images/SUV/tint-3.png" style="opacity: 0;">	
+						<div id="area44" style="height: 110px; position:absolute; z-index:10;" onmousewheel="frontside1()"></div>
+					</div>
+					<div id="twelvelayer" style="position:relative; width:100%">
+						<img class="layer12" id="frontside2" src="./images/SUV/tint-6.png" style="opacity: 0;">	
+						<div id="area55" style="height: 110px; position:absolute; z-index:10;" onmousewheel="frontside2()"></div>
+					</div>
+					<div id="thirteenlayer" style="position:relative; width:100%">
+						<img class="layer13" id="suvfront" src="./images/SUV/tint-4and5-together.png" style="opacity: 0;">	
+						<div id="area66" style="height: 130px; position:absolute; z-index:10;" onmousewheel="suvfront()"></div>
+					</div>
+					<img class="layer10" id="suvback2" src="./images/SUV/tint-8.png" style="opacity: 0;">	
+					<img class="layer14" id="first_back1" src="./images/MAIN_CAR/8.png" style="opacity: 0;">	
+					<img class="layer15" id="chameleon" src="./images/MAIN_CAR/RED-CHAMELEON.png" style="opacity: 0;">
+					<img class="layer16" id="SUVchameleon" src="./images/SUV/SUV_BLUE.png" style="opacity: 0;">
+					<img class="layer17" src="./images/MAIN_CAR/nothing.png" style="opacity: 0;">
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- car section end -->
+	<!-- filter box start -->
+	<div class="container-fluid filter">
+		<div class="filter_box">
+			<div class="row filter_element">
+				<div class="col-sm-3 firstcol">
+					<div class="col-sm-6">
+						<h3>Type:</h3>
+						<button class="type_button" onclick="changeCar1()">Hatchback</button><br>
+						<button class="type_button" onclick="changeCar2()" style="margin-bottom: 10px;">Suv</button>
+					</div>
+					<div class="col-sm-6 over">
+						<h3>Kleur:</h3>
+						<div class="bottom">
+							<button class="kleur_button" onclick="kleurWhite()" style="background-color: white; border:1px solid;"></button>
+							<button class="kleur_button" onclick="kleurGray()" style="background-color: grey;"></button>
+							<button class="kleur_button" onclick="kleurBlack()" style="background-color: black;"></button>
+							<button class="kleur_button" onclick="kleurBlue()" style="background-color: blue;"></button>
+							<button class="kleur_button" onclick="kleurRed()" style="background-color: red;"></button>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-4 middlecol">
+					<div class="row">
+						<div class="colw">
+							<div class="row">
+								<h3>Vanaf b-stijl</h3>
+							</div>
+							<div class="row">
+								<p>Tint vanaf b-stijl+achteruit</p>
+							</div>
+							<div class="row vanaf_b-stijl">
+								<li class="vanaf_button65 sm833" id="vanaf0" style="border-bottom: 3px solid white;"><a onclick="vanaf65()" style="background-color:rgb(0,0,0,0.4);">65%</a></li>
+								<li class="vanaf_button50 sm833" id="vanaf1" style="border-bottom: 3px solid white;"><a onclick="vanaf50()" style="background-color:rgb(0,0,0,0.5);">50%</a></li>
+								<li class="vanaf_button30 sm833" id="vanaf2" style="border-bottom: 3px solid white;"><a onclick="vanaf30()" style="background-color:rgb(0,0,0,0.7);">30%</a></li>
+								<li class="vanaf_button20 sm833" id="vanaf3" style="border-bottom: 3px solid white;"><a onclick="vanaf20()" style="background-color:rgb(0,0,0,0.8);">20%</a></li>
+								<li class="vanaf_button15 sm833" id="vanaf5" style="border-bottom: 3px solid white;"><a onclick="vanaf15()" style="background-color:rgb(0,0,0,0.9);">15%</a></li>
+								<li class="vanaf_button05 sm833" id="vanaf6" style="border-bottom: 3px solid white;"><a onclick="vanaf05()" style="background-color:rgb(0,0,0,1);">05%</a></li>
+							</div>
+						</div>
+					</div>
+					<div class="row left769" style="margin-top: 20px;">
+						<div class="col-sm-8 voorleft">
+							<div class="voor769">
+								<h3>Voor b-stijl</h3>
+								<p>Voorportieren</p>
+								<li id="voor5" class="voor_button65 rightrow" style="border-bottom: 3px solid white;"><a class="smalla" onclick="voor65()" style="background-color:rgb(0,0,0,0.4);">65%</a></li>
+								<li id="voor6" class="voor_button50" style="border-bottom: 3px solid white;"><a class="smalla" onclick="voor50()" style="background-color:rgb(0,0,0,0.5);">50%</a></li>
+							</div>
+						</div>
+						<div class="voorraamdiv">
+							<h3 class="voorramh3">Voorraam</h3>
+							<div class="row voorraam">
+								<li id="rraam5" class="voor_button65" style="border-bottom: 3px solid white;"><a class="smalla" onclick="voorraam65()" style="background-color:rgb(0,0,0,0.4);">65%</a></li>
+								<li id="rraam6" class="voor_button50" style="border-bottom: 3px solid white;"><a class="smalla" onclick="voorraam50()" style="background-color:rgb(0,0,0,0.5);">50%</a></li>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-4 down">
+					<div class="row chamelh3">
+						<h3 class="margin_respense">Chameleon Voorraam</h3>
+					</div>
+					<div class="row chamel_p">
+						<p>Lichtdichtheid 70%</p>
+					</div>
+					<div class="row chameleon">
+						<button class="chameleon_button" onclick="chameleonRed()" style="background-image: url(./images/clear-red.png);">CLEAR RED</button><br>
+						<button class="chameleon_button" onclick="chameleonBlue()" style="background-image: url(./images/clear-blue.png);">CLEAR BLUE</button><br>
+						<button class="chameleon_button" onclick="chameleonGreen()" style="background-image: url(./images/clear-green.png);">CLEAR GREEN</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- filter box end -->
+	
+<script>
+	var type=1;
+	function changeCar1() {
+		document.getElementById('carSort').style.opacity='1';
+		document.getElementById('carSort').src='./images/MAIN_CAR/Hatchback-Mockup-GRAY-FULL.png';
+		document.getElementById('first_back2').style.opacity='0';
+		document.getElementById('first_side2').style.opacity='0';
+		document.getElementById('second_side2').style.opacity='0';
+		document.getElementById('third_front1').style.opacity='0';
+		document.getElementById('third_front2').style.opacity='0';
+		document.getElementById('second_side1').style.opacity='0';
+		document.getElementById('first_side1').style.opacity='0';
+		document.getElementById('first_back1').style.opacity='0';
+		document.getElementById('chameleon').style.opacity='0';
+		document.getElementById('suvSort').style.opacity='0';
+
+		document.getElementById('suvback1').style.opacity='0';
+		document.getElementById('backside1').style.opacity='0';
+		document.getElementById('backside2').style.opacity='0';
+		document.getElementById('suvback2').style.opacity='0';
+		document.getElementById('suvfront').style.opacity='0';
+		document.getElementById('frontside1').style.opacity='0';
+		document.getElementById('frontside2').style.opacity='0';
+		document.getElementById('SUVchameleon').style.opacity='0';
+
+		document.getElementById("vanaf6").style.borderBottom="3px solid white";
+		document.getElementById("vanaf5").style.borderBottom="3px solid white";
+		document.getElementById("vanaf3").style.borderBottom="3px solid white";
+		document.getElementById("vanaf2").style.borderBottom="3px solid white";
+		document.getElementById("vanaf1").style.borderBottom="3px solid white";
+		document.getElementById("vanaf0").style.borderBottom="3px solid white";
+		document.getElementById("voor6").style.borderBottom="3px solid white";
+		document.getElementById("voor5").style.borderBottom="3px solid white";
+		document.getElementById("rraam6").style.borderBottom="3px solid white";
+		document.getElementById("rraam5").style.borderBottom="3px solid white";
+
+		document.getElementById('area1').style.zIndex="1000";
+		document.getElementById('area2').style.zIndex="1000";
+		document.getElementById('area3').style.zIndex="1000";
+		document.getElementById('area5').style.zIndex="1000";
+		document.getElementById('area6').style.zIndex="1000";
+		document.getElementById('area7').style.zIndex="1000";
+		document.getElementById('area11').style.zIndex="10";
+		document.getElementById('area22').style.zIndex="10";
+		document.getElementById('area33').style.zIndex="10";
+		document.getElementById('area44').style.zIndex="10";
+		document.getElementById('area55').style.zIndex="10";
+		document.getElementById('area66').style.zIndex="10";
+		type=1;
+	}
+	function changeCar2() {
+		document.getElementById('suvSort').style.opacity='1';
+		document.getElementById('carSort').style.opacity='0';
+		document.getElementById('first_back2').style.opacity='0';
+		document.getElementById('first_side2').style.opacity='0';
+		document.getElementById('second_side2').style.opacity='0';
+		document.getElementById('third_front1').style.opacity='0';
+		document.getElementById('third_front2').style.opacity='0'
+		document.getElementById('second_side1').style.opacity='0';
+		document.getElementById('first_side1').style.opacity='0';
+		document.getElementById('first_back1').style.opacity='0';
+		document.getElementById('chameleon').style.opacity='0';
+
+		document.getElementById('suvback1').style.opacity='0';
+		document.getElementById('backside1').style.opacity='0';
+		document.getElementById('backside2').style.opacity='0';
+		document.getElementById('suvback2').style.opacity='0';
+		document.getElementById('suvfront').style.opacity='0';
+		document.getElementById('frontside1').style.opacity='0';
+		document.getElementById('frontside2').style.opacity='0';
+		document.getElementById('SUVchameleon').style.opacity='0';
+
+		document.getElementById("vanaf6").style.borderBottom="3px solid white";
+		document.getElementById("vanaf5").style.borderBottom="3px solid white";
+		document.getElementById("vanaf3").style.borderBottom="3px solid white";
+		document.getElementById("vanaf2").style.borderBottom="3px solid white";
+		document.getElementById("vanaf1").style.borderBottom="3px solid white";
+		document.getElementById("vanaf0").style.borderBottom="3px solid white";
+		document.getElementById("voor6").style.borderBottom="3px solid white";
+		document.getElementById("voor5").style.borderBottom="3px solid white";
+		document.getElementById("rraam6").style.borderBottom="3px solid white";
+		document.getElementById("rraam5").style.borderBottom="3px solid white";
+
+		document.getElementById('area11').style.zIndex="1000";
+		document.getElementById('area22').style.zIndex="1000";
+		document.getElementById('area33').style.zIndex="1000";
+		document.getElementById('area44').style.zIndex="1000";
+		document.getElementById('area55').style.zIndex="1000";
+		document.getElementById('area66').style.zIndex="1000";
+		document.getElementById('area1').style.zIndex="10";
+		document.getElementById('area2').style.zIndex="10";
+		document.getElementById('area3').style.zIndex="10";
+		document.getElementById('area5').style.zIndex="10";
+		document.getElementById('area6').style.zIndex="10";
+		document.getElementById('area7').style.zIndex="10";
+		type=0;
+	}
+	function kleurWhite() {
+		if (type==1) {
+			document.getElementById('carSort').src='./images/MAIN_CAR/Hatchback-Mockup-WHITE-FULL.png';
+		} else {
+			document.getElementById('suvSort').src='./images/SUV/SUV-WHITE.png';
+		};
+	}
+	function kleurGray() {
+		if (type==1) {
+			document.getElementById('carSort').src='./images/MAIN_CAR/Hatchback-Mockup-GRAY-FULL.png';
+		} else {
+			document.getElementById('suvSort').src='./images/SUV/SUV-GRAY.png';
+		};
+	}
+	function kleurBlack() {
+		if (type==1) {
+			document.getElementById('carSort').src='./images/MAIN_CAR/Hatchback-Mockup-BLACK-FULL.png';
+		} else {
+			document.getElementById('suvSort').src='./images/SUV/SUV-BLACK.png';
+		};
+	}
+	function kleurBlue() {
+		if (type==1) {
+			document.getElementById('carSort').src='./images/MAIN_CAR/Hatchback-Mockup-BLUE-FULL.png';
+		} else {
+			document.getElementById('suvSort').src='./images/SUV/SUV-BLUE.png';
+		};
+	}
+	function kleurRed() {
+		if (type==1) {
+			document.getElementById('carSort').src='./images/MAIN_CAR/Hatchback-Mockup-RED-FULL.png';
+		} else {
+			document.getElementById('suvSort').src='./images/SUV/SUV-RED.png';
+		};
+	}
+	var action=1;
+	function vanaf05() {
+		if(action==1) {
+			firstaction05();
+		} else if (action==0) {
+			secondaction05();
+		}
+	}
+	function firstaction05() {
+		if (type==1) {
+			document.getElementById("first_back2").style.opacity = "1";
+			document.getElementById("first_back1").style.opacity = "1";
+			document.getElementById("first_side1").style.opacity = "1";
+			document.getElementById("first_side2").style.opacity = "1";
+		} else {
+			document.getElementById('suvback1').style.opacity = "1";
+			document.getElementById('backside1').style.opacity = "1";
+			document.getElementById('backside2').style.opacity = "1";
+			document.getElementById('suvback2').style.opacity = "1";
+		};
+		document.getElementById("vanaf6").style.borderBottom="3px solid rgb(0,0,0,1)";
+		document.getElementById("vanaf5").style.borderBottom="3px solid white";
+		document.getElementById("vanaf3").style.borderBottom="3px solid white";
+		document.getElementById("vanaf2").style.borderBottom="3px solid white";
+		document.getElementById("vanaf1").style.borderBottom="3px solid white";
+		document.getElementById("vanaf0").style.borderBottom="3px solid white";
+		action=0;
+		action1=1;
+		action2=1;
+		action3=1;
+		action4=1;
+		action5=1;
+	}
+	function secondaction05() {
+		if (type==1) {
+			document.getElementById("first_back2").style.opacity = "0";
+			document.getElementById("first_back1").style.opacity = "0";
+			document.getElementById("first_side1").style.opacity = "0";
+			document.getElementById("first_side2").style.opacity = "0";
+		} else {
+			document.getElementById('suvback1').style.opacity = "0";
+			document.getElementById('backside1').style.opacity = "0";
+			document.getElementById('backside2').style.opacity = "0";
+			document.getElementById('suvback2').style.opacity = "0";
+		};
+		document.getElementById("vanaf6").style.borderBottom="3px solid white";
+		document.getElementById("vanaf5").style.borderBottom="3px solid white";
+		document.getElementById("vanaf3").style.borderBottom="3px solid white";
+		document.getElementById("vanaf2").style.borderBottom="3px solid white";
+		document.getElementById("vanaf1").style.borderBottom="3px solid white";
+		document.getElementById("vanaf0").style.borderBottom="3px solid white";
+		action=1;
+	}
+	var action1=1;
+	function vanaf15() {
+		if(action1==1) {
+			firstaction15();
+		} else if (action1==0) {
+			secondaction15();
+		}
+	}
+	function firstaction15() {
+		if (type==1) {
+			document.getElementById("first_back2").style.opacity = "0.9";
+			document.getElementById("first_back1").style.opacity = "0.9";
+			document.getElementById("first_side1").style.opacity = "0.9";
+			document.getElementById("first_side2").style.opacity = "0.9";
+
+		} else {
+			document.getElementById('suvback1').style.opacity = "0.9";
+			document.getElementById('backside1').style.opacity = "0.9";
+			document.getElementById('backside2').style.opacity = "0.9";
+			document.getElementById('suvback2').style.opacity = "0.9";
+		};
+		document.getElementById("vanaf5").style.borderBottom="3px solid rgb(0,0,0,0.9)";
+		document.getElementById("vanaf6").style.borderBottom="3px solid white";
+		document.getElementById("vanaf3").style.borderBottom="3px solid white";
+		document.getElementById("vanaf2").style.borderBottom="3px solid white";
+		document.getElementById("vanaf1").style.borderBottom="3px solid white";
+		document.getElementById("vanaf0").style.borderBottom="3px solid white";
+		action1=0;
+		action=1;
+		action2=1;
+		action3=1;
+		action4=1;
+		action5=1;
+	}
+	function secondaction15() {
+		if (type==1) {
+			document.getElementById("first_back2").style.opacity = "0";
+			document.getElementById("first_back1").style.opacity = "0";
+			document.getElementById("first_side1").style.opacity = "0";
+			document.getElementById("first_side2").style.opacity = "0";
+
+		} else {
+			document.getElementById('suvback1').style.opacity = "0";
+			document.getElementById('backside1').style.opacity = "0";
+			document.getElementById('backside2').style.opacity = "0";
+			document.getElementById('suvback2').style.opacity = "0";
+		};
+		document.getElementById("vanaf5").style.borderBottom="3px solid white";
+		document.getElementById("vanaf6").style.borderBottom="3px solid white";
+		document.getElementById("vanaf3").style.borderBottom="3px solid white";
+		document.getElementById("vanaf2").style.borderBottom="3px solid white";
+		document.getElementById("vanaf1").style.borderBottom="3px solid white";
+		document.getElementById("vanaf0").style.borderBottom="3px solid white";
+		action1=1;
+	}
+	var action2=1;
+	function vanaf20() {
+		if(action2==1) {
+			firstaction20();
+		} else if (action2==0) {
+			secondaction20();
+		}
+	}
+	function firstaction20() {
+		if (type==1) {
+			document.getElementById("first_back2").style.opacity = "0.8";
+			document.getElementById("first_back1").style.opacity = "0.8";
+			document.getElementById("first_side1").style.opacity = "0.8";
+			document.getElementById("first_side2").style.opacity = "0.8";
+		} else {
+			document.getElementById('suvback1').style.opacity = "0.8";
+			document.getElementById('backside1').style.opacity = "0.8";
+			document.getElementById('backside2').style.opacity = "0.8";
+			document.getElementById('suvback2').style.opacity = "0.8";
+		};
+		document.getElementById("vanaf3").style.borderBottom="3px solid rgb(0,0,0,0.8)";
+		document.getElementById("vanaf6").style.borderBottom="3px solid white";
+		document.getElementById("vanaf5").style.borderBottom="3px solid white";
+		document.getElementById("vanaf2").style.borderBottom="3px solid white";
+		document.getElementById("vanaf1").style.borderBottom="3px solid white";
+		document.getElementById("vanaf0").style.borderBottom="3px solid white";
+		action2=0;
+		action=1;
+		action1=1;
+		action3=1;
+		action4=1;
+		action5=1;
+	}
+	function secondaction20() {
+		if (type==1) {
+			document.getElementById("first_back2").style.opacity = "0";
+			document.getElementById("first_back1").style.opacity = "0";
+			document.getElementById("first_side1").style.opacity = "0";
+			document.getElementById("first_side2").style.opacity = "0";
+		} else {
+			document.getElementById('suvback1').style.opacity = "0";
+			document.getElementById('backside1').style.opacity = "0";
+			document.getElementById('backside2').style.opacity = "0";
+			document.getElementById('suvback2').style.opacity = "0";
+		};
+		document.getElementById("vanaf3").style.borderBottom="3px solid white";
+		document.getElementById("vanaf6").style.borderBottom="3px solid white";
+		document.getElementById("vanaf5").style.borderBottom="3px solid white";
+		document.getElementById("vanaf2").style.borderBottom="3px solid white";
+		document.getElementById("vanaf1").style.borderBottom="3px solid white";
+		document.getElementById("vanaf0").style.borderBottom="3px solid white";
+		action2=1;
+	}
+	var action3=1;
+	function vanaf30() {
+		if(action3==1) {
+			firstaction30();
+		} else if (action3==0) {
+			secondaction30();
+		}
+	}
+	function firstaction30() {
+		if (type==1) {
+			document.getElementById("first_back2").style.opacity = "0.7";
+			document.getElementById("first_back1").style.opacity = "0.7";
+			document.getElementById("first_side1").style.opacity = "0.7";
+			document.getElementById("first_side2").style.opacity = "0.7";
+
+		} else {
+			document.getElementById('suvback1').style.opacity = "0.7";
+			document.getElementById('backside1').style.opacity = "0.7";
+			document.getElementById('backside2').style.opacity = "0.7";
+			document.getElementById('suvback2').style.opacity = "0.7";
+		};
+		document.getElementById("vanaf2").style.borderBottom="3px solid rgb(0,0,0,0.7)";
+		document.getElementById("vanaf6").style.borderBottom="3px solid white";
+		document.getElementById("vanaf5").style.borderBottom="3px solid white";
+		document.getElementById("vanaf3").style.borderBottom="3px solid white";
+		document.getElementById("vanaf1").style.borderBottom="3px solid white";
+		document.getElementById("vanaf0").style.borderBottom="3px solid white";
+		action3=0;
+		action=1;
+		action2=1;
+		action4=1;
+		action5=1;
+		action1=1;
+	}
+	function secondaction30() {
+		if (type==1) {
+			document.getElementById("first_back2").style.opacity = "0";
+			document.getElementById("first_back1").style.opacity = "0";
+			document.getElementById("first_side1").style.opacity = "0";
+			document.getElementById("first_side2").style.opacity = "0";
+
+		} else {
+			document.getElementById('suvback1').style.opacity = "0";
+			document.getElementById('backside1').style.opacity = "0";
+			document.getElementById('backside2').style.opacity = "0";
+			document.getElementById('suvback2').style.opacity = "0";
+		};
+		document.getElementById("vanaf2").style.borderBottom="3px solid white";
+		document.getElementById("vanaf6").style.borderBottom="3px solid white";
+		document.getElementById("vanaf5").style.borderBottom="3px solid white";
+		document.getElementById("vanaf3").style.borderBottom="3px solid white";
+		document.getElementById("vanaf1").style.borderBottom="3px solid white";
+		document.getElementById("vanaf0").style.borderBottom="3px solid white";
+		action3=1;
+	}
+	var action4=1;
+	function vanaf50() {
+		if(action4==1) {
+			firstaction50();
+		} else if (action4==0) {
+			secondaction50();
+		}
+	}
+	function firstaction50() {
+		if (type==1) {
+			document.getElementById("first_back2").style.opacity = "0.5";
+			document.getElementById("first_back1").style.opacity = "0.5";
+			document.getElementById("first_side1").style.opacity = "0.5";
+			document.getElementById("first_side2").style.opacity = "0.5";
+
+		} else {
+			document.getElementById('suvback1').style.opacity = "0.5";
+			document.getElementById('backside1').style.opacity = "0.5";
+			document.getElementById('backside2').style.opacity = "0.5";
+			document.getElementById('suvback2').style.opacity = "0.5";
+		};
+		document.getElementById("vanaf1").style.borderBottom="3px solid rgb(0,0,0,0.5)";
+		document.getElementById("vanaf6").style.borderBottom="3px solid white";
+		document.getElementById("vanaf5").style.borderBottom="3px solid white";
+		document.getElementById("vanaf3").style.borderBottom="3px solid white";
+		document.getElementById("vanaf2").style.borderBottom="3px solid white";
+		document.getElementById("vanaf0").style.borderBottom="3px solid white";
+		action4=0;
+		action=1;
+		action1=1;
+		action2=1;
+		action3=1;
+		action5=1;
+	}
+	function secondaction50() {
+		if (type==1) {
+			document.getElementById("first_back2").style.opacity = "0";
+			document.getElementById("first_back1").style.opacity = "0";
+			document.getElementById("first_side1").style.opacity = "0";
+			document.getElementById("first_side2").style.opacity = "0";
+
+		} else {
+			document.getElementById('suvback1').style.opacity = "0";
+			document.getElementById('backside1').style.opacity = "0";
+			document.getElementById('backside2').style.opacity = "0";
+			document.getElementById('suvback2').style.opacity = "0";
+		};
+		document.getElementById("vanaf1").style.borderBottom="3px solid white";
+		document.getElementById("vanaf6").style.borderBottom="3px solid white";
+		document.getElementById("vanaf5").style.borderBottom="3px solid white";
+		document.getElementById("vanaf3").style.borderBottom="3px solid white";
+		document.getElementById("vanaf2").style.borderBottom="3px solid white";
+		document.getElementById("vanaf0").style.borderBottom="3px solid white";
+		action4=1;
+	}
+	var action5=1;
+	function vanaf65() {
+		if(action5==1) {
+			firstaction65();
+		} else if (action5==0) {
+			secondaction65();
+		}
+	}
+	function firstaction65() {
+		if (type==1) {
+			document.getElementById("first_back2").style.opacity = "0.4";
+			document.getElementById("first_back1").style.opacity = "0.4";
+			document.getElementById("first_side1").style.opacity = "0.4";
+			document.getElementById("first_side2").style.opacity = "0.4";
+
+		} else {
+			document.getElementById('suvback1').style.opacity = "0.4";
+			document.getElementById('backside1').style.opacity = "0.4";
+			document.getElementById('backside2').style.opacity = "0.4";
+			document.getElementById('suvback2').style.opacity = "0.4";
+		};
+		document.getElementById("vanaf0").style.borderBottom="3px solid rgb(0,0,0,0.4)";
+		document.getElementById("vanaf6").style.borderBottom="3px solid white";
+		document.getElementById("vanaf5").style.borderBottom="3px solid white";
+		document.getElementById("vanaf3").style.borderBottom="3px solid white";
+		document.getElementById("vanaf2").style.borderBottom="3px solid white";
+		document.getElementById("vanaf1").style.borderBottom="3px solid white";
+		action5=0;
+		action=1;
+		action2=1;
+		action3=1;
+		action4=1;
+		action1=1;
+	}
+	function secondaction65() {
+		if (type==1) {
+			document.getElementById("first_back2").style.opacity = "0";
+			document.getElementById("first_back1").style.opacity = "0";
+			document.getElementById("first_side1").style.opacity = "0";
+			document.getElementById("first_side2").style.opacity = "0";
+
+		} else {
+			document.getElementById('suvback1').style.opacity = "0";
+			document.getElementById('backside1').style.opacity = "0";
+			document.getElementById('backside2').style.opacity = "0";
+			document.getElementById('suvback2').style.opacity = "0";
+		};
+		document.getElementById("vanaf0").style.borderBottom="3px solid white";
+		document.getElementById("vanaf6").style.borderBottom="3px solid white";
+		document.getElementById("vanaf5").style.borderBottom="3px solid white";
+		document.getElementById("vanaf3").style.borderBottom="3px solid white";
+		document.getElementById("vanaf2").style.borderBottom="3px solid white";
+		document.getElementById("vanaf1").style.borderBottom="3px solid white";
+		action5=1;
+	}
+	var action6=1;
+	function voor50() {
+		if(action6==1) {
+			firstaction_vo50();
+		} else if (action6==0) {
+			secondaction_vo50();
+		}
+	}
+	function firstaction_vo50() {
+		if (type==1) {
+			document.getElementById("second_side1").style.opacity = "0.5";
+			document.getElementById("second_side2").style.opacity = "0.5";
+			document.getElementById('chameleon').style.opacity='0';
+		} else {
+			document.getElementById("frontside1").style.opacity = "0.5";
+			document.getElementById("frontside2").style.opacity = "0.5";
+			document.getElementById('SUVchameleon').style.opacity='0';
+		};
+		document.getElementById("voor6").style.borderBottom="3px solid rgb(0,0,0,0.5)";
+		document.getElementById("voor5").style.borderBottom="3px solid white";
+		action6=0;
+		action7=1;
+	}
+	function secondaction_vo50() {
+		if (type==1) {
+			document.getElementById("second_side1").style.opacity = "0";
+			document.getElementById("second_side2").style.opacity = "0";
+			document.getElementById('chameleon').style.opacity='0';
+		} else {
+			document.getElementById("frontside1").style.opacity = "0";
+			document.getElementById("frontside2").style.opacity = "0";
+			document.getElementById('SUVchameleon').style.opacity='0';
+		};
+		document.getElementById("voor6").style.borderBottom="3px solid white";
+		document.getElementById("voor5").style.borderBottom="3px solid white";
+		action6=1;
+	}
+	var action7=1;
+	function voor65() {
+		if(action7==1) {
+			firstaction_vo65();
+		} else if (action7==0) {
+			secondaction_vo65();
+		}
+	}
+	function firstaction_vo65() {
+		if (type==1) {
+			document.getElementById("second_side1").style.opacity = "0.4";
+			document.getElementById("second_side2").style.opacity = "0.4";
+			document.getElementById('chameleon').style.opacity='0';
+		} else {
+			document.getElementById("frontside1").style.opacity = "0.4";
+			document.getElementById("frontside2").style.opacity = "0.4";
+			document.getElementById('SUVchameleon').style.opacity='0';
+		};
+		document.getElementById("voor5").style.borderBottom="3px solid rgb(0,0,0,0.4)";
+		document.getElementById("voor6").style.borderBottom="3px solid white";
+		action7=0;
+		action6=1;
+	}
+	function secondaction_vo65() {
+		if (type==1) {
+			document.getElementById("second_side1").style.opacity = "0";
+			document.getElementById("second_side2").style.opacity = "0";
+			document.getElementById('chameleon').style.opacity='0';
+		} else {
+			document.getElementById("frontside1").style.opacity = "0";
+			document.getElementById("frontside2").style.opacity = "0";
+			document.getElementById('SUVchameleon').style.opacity='0';
+		};
+		document.getElementById("voor5").style.borderBottom="3px solid white";
+		document.getElementById("voor6").style.borderBottom="3px solid white";
+		action7=1;
+	}
+	var action8=1;
+	function voorraam50() {
+		if(action8==1) {
+			firstaction_rr50();
+		} else if (action8==0) {
+			secondaction_rr50();
+		}
+	}
+	function firstaction_rr50() {
+		if (type==1) {
+			document.getElementById("third_front1").style.opacity = "0.5";
+			document.getElementById("third_front2").style.opacity = "0.5";
+			document.getElementById('chameleon').style.opacity='0';
+			document.getElementById("chameleon").style.zIndex = "109";
+		} else {
+			document.getElementById("suvfront").style.opacity = "0.5";
+			document.getElementById('SUVchameleon').style.opacity='0';
+			document.getElementById("SUVchameleon").style.zIndex = "109";
+		};
+		document.getElementById("rraam6").style.borderBottom="3px solid rgb(0,0,0,0.5)";
+		document.getElementById("rraam5").style.borderBottom="3px solid white";
+		action8=0;
+		action9=1;
+	}
+	function secondaction_rr50() {
+		if (type==1) {
+			document.getElementById("third_front1").style.opacity = "0";
+			document.getElementById("third_front2").style.opacity = "0";
+			document.getElementById('chameleon').style.opacity='0';
+			document.getElementById("chameleon").style.zIndex = "109";
+		} else {
+			document.getElementById("suvfront").style.opacity = "0";
+			document.getElementById('SUVchameleon').style.opacity='0';
+			document.getElementById("SUVchameleon").style.zIndex = "109";
+		};
+		document.getElementById("rraam6").style.borderBottom="3px solid white";
+		document.getElementById("rraam5").style.borderBottom="3px solid white";
+		action8=1;
+	}
+	var action9=1;
+	function voorraam65() {
+		if(action9==1) {
+			firstaction_rr65();
+		} else if (action9==0) {
+			secondaction_rr65();
+		}
+	}
+	function firstaction_rr65() {
+		if (type==1) {
+			document.getElementById("third_front1").style.opacity = "0.4";
+			document.getElementById("third_front2").style.opacity = "0.4";
+			document.getElementById('chameleon').style.opacity='0';
+			document.getElementById("chameleon").style.zIndex = "109";
+		} else {
+			document.getElementById("suvfront").style.opacity = "0.4";
+			document.getElementById('SUVchameleon').style.opacity='0';
+			document.getElementById("SUVchameleon").style.zIndex = "109";
+		};
+		document.getElementById("rraam5").style.borderBottom="3px solid rgb(0,0,0,0.4)";
+		document.getElementById("rraam6").style.borderBottom="none";
+		action9=0;
+		action8=1;
+	}
+	function secondaction_rr65() {
+		if (type==1) {
+			document.getElementById("third_front1").style.opacity = "0";
+			document.getElementById("third_front2").style.opacity = "0";
+			document.getElementById('chameleon').style.opacity='0';
+			document.getElementById("chameleon").style.zIndex = "109";
+		} else {
+			document.getElementById("suvfront").style.opacity = "0";
+			document.getElementById('SUVchameleon').style.opacity='0';
+			document.getElementById("SUVchameleon").style.zIndex = "109";
+		};
+		document.getElementById("rraam5").style.borderBottom="3px solid white";
+		document.getElementById("rraam6").style.borderBottom="none";
+		action9=1;
+	}
+
+	var chamel_action=1;
+	function chameleonRed() {
+		if(chamel_action==1) {
+			firstaction_cha_re();
+		} else if (chamel_action==0) {
+			secondaction_cha_re();
+		}
+	}
+	function firstaction_cha_re() {
+		if (type==1) {
+			document.getElementById('chameleon').src='./images/MAIN_CAR/RED-CHAMELEON.png';
+			document.getElementById('chameleon').style.opacity='0.8';
+			document.getElementById("third_front1").style.opacity = "0";
+			document.getElementById("third_front2").style.opacity = "0";
+			document.getElementById("second_side2").style.opacity = "0";
+			document.getElementById("chameleon").style.zIndex = "999";
+			document.getElementById("rraam6").style.borderBottom="none";
+			document.getElementById("rraam5").style.borderBottom="none";
+		} else {
+			document.getElementById('SUVchameleon').src='./images/SUV/SUV_RED.png';
+			document.getElementById('SUVchameleon').style.opacity='0.8';
+			document.getElementById("suvfront").style.opacity = "0";
+			document.getElementById("frontside1").style.opacity = "0";
+			document.getElementById("SUVchameleon").style.zIndex = "999";
+			document.getElementById("rraam6").style.borderBottom="none";
+			document.getElementById("rraam5").style.borderBottom="none";
+		};
+		chamel_action=0;
+		chamel_action2=1;
+		chamel_action3=1;
+	}
+	function secondaction_cha_re() {
+		if (type==1) {
+			document.getElementById('chameleon').src='./images/MAIN_CAR/RED-CHAMELEON.png';
+			document.getElementById('chameleon').style.opacity='0';
+			document.getElementById("third_front1").style.opacity = "0";
+			document.getElementById("third_front2").style.opacity = "0";
+			document.getElementById("second_side2").style.opacity = "0";
+			document.getElementById("chameleon").style.zIndex = "999";
+			document.getElementById("rraam6").style.borderBottom="none";
+			document.getElementById("rraam5").style.borderBottom="none";
+		} else {
+			document.getElementById('SUVchameleon').src='./images/SUV/SUV_RED.png';
+			document.getElementById('SUVchameleon').style.opacity='0';
+			document.getElementById("suvfront").style.opacity = "0";
+			document.getElementById("frontside1").style.opacity = "0";
+			document.getElementById("SUVchameleon").style.zIndex = "999";
+			document.getElementById("rraam6").style.borderBottom="none";
+			document.getElementById("rraam5").style.borderBottom="none";
+		};
+		chamel_action=1;
+	}
+	var chamel_action2=1;
+	function chameleonBlue() {
+		if(chamel_action2==1) {
+			firstaction_cha_bl();
+		} else if (chamel_action2==0) {
+			secondaction_cha_bl();
+		}
+	}
+	function firstaction_cha_bl() {
+		if (type==1) {
+			document.getElementById('chameleon').src='./images/MAIN_CAR/BLUE-CHAMELEON.png';
+			document.getElementById('chameleon').style.opacity='0.8';
+			document.getElementById("third_front1").style.opacity = "0";
+			document.getElementById("third_front2").style.opacity = "0";
+			document.getElementById("second_side2").style.opacity = "0";
+			document.getElementById("chameleon").style.zIndex = "999";
+			document.getElementById("rraam6").style.borderBottom="none";
+			document.getElementById("rraam5").style.borderBottom="none";
+		} else {
+			document.getElementById('SUVchameleon').src='./images/SUV/SUV_BLUE.png';
+			document.getElementById('SUVchameleon').style.opacity='0.8';
+			document.getElementById("suvfront").style.opacity = "0";
+			document.getElementById("frontside1").style.opacity = "0";
+			document.getElementById("SUVchameleon").style.zIndex = "999";
+			document.getElementById("rraam6").style.borderBottom="none";
+			document.getElementById("rraam5").style.borderBottom="none";
+		};
+		chamel_action2=0;
+		chamel_action=1;
+		chamel_action3=1
+	}
+	function secondaction_cha_bl() {
+		if (type==1) {
+			document.getElementById('chameleon').src='./images/MAIN_CAR/BLUE-CHAMELEON.png';
+			document.getElementById('chameleon').style.opacity='0';
+			document.getElementById("third_front1").style.opacity = "0";
+			document.getElementById("third_front2").style.opacity = "0";
+			document.getElementById("second_side2").style.opacity = "0";
+			document.getElementById("chameleon").style.zIndex = "999";
+			document.getElementById("rraam6").style.borderBottom="none";
+			document.getElementById("rraam5").style.borderBottom="none";
+		} else {
+			document.getElementById('SUVchameleon').src='./images/SUV/SUV_BLUE.png';
+			document.getElementById('SUVchameleon').style.opacity='0';
+			document.getElementById("suvfront").style.opacity = "0";
+			document.getElementById("frontside1").style.opacity = "0";
+			document.getElementById("SUVchameleon").style.zIndex = "999";
+			document.getElementById("rraam6").style.borderBottom="none";
+			document.getElementById("rraam5").style.borderBottom="none";
+		};
+		chamel_action2=1;
+	}
+	var chamel_action3=1;
+	function chameleonGreen() {
+		if(chamel_action3==1) {
+			firstaction_cha_gr();
+		} else if (chamel_action3==0) {
+			secondaction_cha_gr();
+		}
+	}
+	function firstaction_cha_gr() {
+		if (type==1) {
+			document.getElementById('chameleon').src='./images/MAIN_CAR/GREEN-CHAMELEON.png';
+			document.getElementById('chameleon').style.opacity='0.8';
+			document.getElementById("third_front1").style.opacity = "0";
+			document.getElementById("third_front2").style.opacity = "0";
+			document.getElementById("second_side2").style.opacity = "0";
+			document.getElementById("chameleon").style.zIndex = "999";
+			document.getElementById("rraam6").style.borderBottom="none";
+			document.getElementById("rraam5").style.borderBottom="none";
+		} else {
+			document.getElementById('SUVchameleon').src='./images/SUV/SUV_GREEN.png';
+			document.getElementById('SUVchameleon').style.opacity='0.8';
+			document.getElementById("suvfront").style.opacity = "0";
+			document.getElementById("frontside1").style.opacity = "0";
+			document.getElementById("SUVchameleon").style.zIndex = "999";
+			document.getElementById("rraam6").style.borderBottom="none";
+			document.getElementById("rraam5").style.borderBottom="none";
+		};
+		chamel_action3=0;
+		chamel_action=1;
+		chamel_action2=1;
+	}
+	function secondaction_cha_gr() {
+		if (type==1) {
+			document.getElementById('chameleon').src='./images/MAIN_CAR/GREEN-CHAMELEON.png';
+			document.getElementById('chameleon').style.opacity='0';
+			document.getElementById("third_front1").style.opacity = "0";
+			document.getElementById("third_front2").style.opacity = "0";
+			document.getElementById("second_side2").style.opacity = "0";
+			document.getElementById("chameleon").style.zIndex = "999";
+			document.getElementById("rraam6").style.borderBottom="none";
+			document.getElementById("rraam5").style.borderBottom="none";
+		} else {
+			document.getElementById('SUVchameleon').src='./images/SUV/SUV_GREEN.png';
+			document.getElementById('SUVchameleon').style.opacity='0';
+			document.getElementById("suvfront").style.opacity = "0";
+			document.getElementById("frontside1").style.opacity = "0";
+			document.getElementById("SUVchameleon").style.zIndex = "999";
+			document.getElementById("rraam6").style.borderBottom="none";
+			document.getElementById("rraam5").style.borderBottom="none";
+		};
+		chamel_action3=1;
+	}
+
+<!-- -----------scroll--------- -->
+
+
+function backback(e) {
+    var firstlayer = document.getElementById("firstlayer");
+    var layer1 = document.getElementById("first_back2");
+    firstlayer.addEventListener('wheel', function(event) {
+        event.preventDefault();
+        var opacity = layer1.style.opacity - event.deltaY * 0.00001;
+        if (opacity < 0) {
+            opacity = 0;
+        } else if (opacity > 0.9) {
+            opacity = 0.9;
+        }
+        layer1.style.opacity = opacity;
+    })
+}
+var over1 = document.getElementById("area1");
+var image1 = document.getElementById("first_back2");
+over1.addEventListener('mouseover', function() {
+	image1.style.opacity = 0.9;
+})
+over1.addEventListener('mouseout',function() {
+	image1.style.opacity = 0;
+})
+function backside(e) {
+	var secondlayer=document.getElementById("secondlayer");
+	var layer1=document.getElementById("first_side2");
+	secondlayer.addEventListener('wheel', function(event){
+		event.preventDefault();
+        var opacity = layer1.style.opacity - event.deltaY * 0.00001;
+        if (opacity < 0) {
+            opacity = 0;
+        } else if (opacity > 0.9) {
+            opacity = 0.9;
+        }
+        layer1.style.opacity = opacity;
+	})
+} 
+var over2 = document.getElementById("area2");
+var image2 = document.getElementById("first_side2");
+over2.addEventListener('mouseover', function() {
+	image2.style.opacity = 0.9;
+})
+over2.addEventListener('mouseout',function() {
+	image2.style.opacity = 0;
+})
+function backfront(e) {
+	var thirdlayer=document.getElementById("thirdlayer");
+	var layer1=document.getElementById("second_side2");
+	thirdlayer.addEventListener('wheel', function(event){
+		event.preventDefault();
+        var opacity = layer1.style.opacity - event.deltaY * 0.00001;
+        if (opacity < 0) {
+            opacity = 0;
+        } else if (opacity > 0.5) {
+            opacity = 0.5;
+        }
+        layer1.style.opacity = opacity;	})
+} 
+var over3 = document.getElementById("area3");
+var image3 = document.getElementById("second_side2");
+over3.addEventListener('mouseover', function() {
+	image3.style.opacity = 0.5;
+})
+over3.addEventListener('mouseout',function() {
+	image3.style.opacity = 0;
+})
+function frontfront(e) {
+	var fourthlayer=document.getElementById("fourthlayer");
+	var layer1=document.getElementById("third_front2");
+	fourthlayer.addEventListener('wheel', function(event){
+		event.preventDefault();
+        var opacity = layer1.style.opacity - event.deltaY * 0.00001;
+        if (opacity < 0) {
+            opacity = 0;
+        } else if (opacity > 0.5) {
+            opacity = 0.5;
+        }
+        layer1.style.opacity = opacity;	})
+} 
+var over5 = document.getElementById("area5");
+var image5 = document.getElementById("third_front2");
+over5.addEventListener('mouseover', function() {
+	image5.style.opacity = 0.5;
+})
+over5.addEventListener('mouseout',function() {
+	image5.style.opacity = 0;
+})
+function frontside(e) {
+	var fifthlayer=document.getElementById("fifthlayer");
+	var layer1=document.getElementById("second_side1");
+	fifthlayer.addEventListener('wheel', function(event){
+		event.preventDefault();
+        var opacity = layer1.style.opacity - event.deltaY * 0.00001;
+        if (opacity < 0) {
+            opacity = 0;
+        } else if (opacity > 0.5) {
+            opacity = 0.5;
+        }
+        layer1.style.opacity = opacity;	})
+} 
+var over6 = document.getElementById("area6");
+var image6 = document.getElementById("second_side1");
+over6.addEventListener('mouseover', function() {
+	image6.style.opacity = 0.5;
+})
+over6.addEventListener('mouseout',function() {
+	image6.style.opacity = 0;
+})
+function frontback(e) {
+	var sixthlayer=document.getElementById("sixthlayer");
+	var layer1=document.getElementById("first_side1");
+	sixthlayer.addEventListener('wheel', function(event){
+		event.preventDefault();
+        var opacity = layer1.style.opacity - event.deltaY * 0.00001;
+        if (opacity < 0) {
+            opacity = 0;
+        } else if (opacity > 0.9) {
+            opacity = 0.9;
+        }
+        layer1.style.opacity = opacity;	})
+} 
+var over7 = document.getElementById("area7");
+var image7 = document.getElementById("first_side1");
+var image61 = document.getElementById("first_back1");
+over7.addEventListener('mouseover', function() {
+	image7.style.opacity = 0.9;
+	image61.style.opacity = 0.9;
+})
+over7.addEventListener('mouseout',function() {
+	image7.style.opacity = 0;
+	image61.style.opacity = 0;
+})
+function suvback1(e) {
+	var sevenlayer=document.getElementById("sevenlayer");
+	var layer1=document.getElementById("suvback1");
+	sevenlayer.addEventListener('wheel', function(event){
+		event.preventDefault();
+        var opacity = layer1.style.opacity - event.deltaY * 0.00001;
+        if (opacity < 0) {
+            opacity = 0;
+        } else if (opacity > 0.9) {
+            opacity = 0.9;
+        }
+        layer1.style.opacity = opacity;	})
+} 
+var over11 = document.getElementById("area11");
+var image11 = document.getElementById("suvback1");
+over11.addEventListener('mouseover', function() {
+	image11.style.opacity = 0.9;
+})
+over11.addEventListener('mouseout',function() {
+	image11.style.opacity = 0;
+})
+function backside1(e) {
+	var eightlayer=document.getElementById("eightlayer");
+	var layer1=document.getElementById("backside1");
+	eightlayer.addEventListener('wheel', function(event){
+		event.preventDefault();
+        var opacity = layer1.style.opacity - event.deltaY * 0.00001;
+        if (opacity < 0) {
+            opacity = 0;
+        } else if (opacity > 0.9) {
+            opacity = 0.9;
+        }
+        layer1.style.opacity = opacity;	})
+} 
+var over22 = document.getElementById("area22");
+var image22 = document.getElementById("backside1");
+over22.addEventListener('mouseover', function() {
+	image22.style.opacity = 0.9;
+})
+over22.addEventListener('mouseout',function() {
+	image22.style.opacity = 0;
+})
+function backside2(e) {
+	var ninelayer=document.getElementById("ninelayer");
+	var layer1=document.getElementById("backside2");
+	ninelayer.addEventListener('wheel', function(event){
+		event.preventDefault();
+        var opacity = layer1.style.opacity - event.deltaY * 0.00001;
+        if (opacity < 0) {
+            opacity = 0;
+        } else if (opacity > 0.9) {
+            opacity = 0.9;
+        }
+        layer1.style.opacity = opacity;	})
+} 
+var over33 = document.getElementById("area33");
+var image33 = document.getElementById("backside2");
+var image32 = document.getElementById("suvback2");
+over33.addEventListener('mouseover', function() {
+	image33.style.opacity = 0.9;
+	image32.style.opacity = 0.9;
+})
+over33.addEventListener('mouseout',function() {
+	image33.style.opacity = 0;
+	image32.style.opacity = 0;
+})
+function frontside1(e) {
+	var elevenlayer=document.getElementById("elevenlayer");
+	var layer1=document.getElementById("frontside1");
+	elevenlayer.addEventListener('wheel', function(event){
+		event.preventDefault();
+        var opacity = layer1.style.opacity - event.deltaY * 0.00001;
+        if (opacity < 0) {
+            opacity = 0;
+        } else if (opacity > 0.5) {
+            opacity = 0.5;
+        }
+        layer1.style.opacity = opacity;	})
+} 
+var over44 = document.getElementById("area44");
+var image44 = document.getElementById("frontside1");
+over44.addEventListener('mouseover', function() {
+	image44.style.opacity = 0.5;
+})
+over44.addEventListener('mouseout',function() {
+	image44.style.opacity = 0;
+})
+function frontside2(e) {
+	var twelvelayer=document.getElementById("twelvelayer");
+	var layer1=document.getElementById("frontside2");
+	twelvelayer.addEventListener('wheel', function(event){
+		event.preventDefault();
+        var opacity = layer1.style.opacity - event.deltaY * 0.00001;
+        if (opacity < 0) {
+            opacity = 0;
+        } else if (opacity > 0.5) {
+            opacity = 0.5;
+        }
+        layer1.style.opacity = opacity;	})
+} 
+var over55 = document.getElementById("area55");
+var image55 = document.getElementById("frontside2");
+over55.addEventListener('mouseover', function() {
+	image55.style.opacity = 0.5;
+})
+over55.addEventListener('mouseout',function() {
+	image55.style.opacity = 0;
+})
+function suvfront(e) {
+	var thirteenlayer=document.getElementById("thirteenlayer");
+	var layer1=document.getElementById("suvfront");
+	thirteenlayer.addEventListener('wheel', function(event){
+		event.preventDefault();
+        var opacity = layer1.style.opacity - event.deltaY * 0.00001;
+        if (opacity < 0) {
+            opacity = 0;
+        } else if (opacity > 0.5) {
+            opacity = 0.5;
+        }
+        layer1.style.opacity = opacity;	})
+} 
+var over66 = document.getElementById("area66");
+var image66 = document.getElementById("suvfront");
+over66.addEventListener('mouseover', function() {
+	image66.style.opacity = 0.5;
+})
+over66.addEventListener('mouseout',function() {
+	image66.style.opacity = 0;
+})
+</script> 
+
+
+<!-- Javascript files-->
+<script src="js/jquery.min.js"></script>
+
+</body>
+</html>

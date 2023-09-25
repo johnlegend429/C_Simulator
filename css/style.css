@@ -1,0 +1,362 @@
+/*--------------------------------------------------------------------- File Name: style.css ---------------------------------------------------------------------*/
+
+/*--------------------------------------------------------------------- import Fonts ---------------------------------------------------------------------*/
+@font-face {
+  font-family: custom;
+  src: url("../font/Montserrat-Black.ttf");
+}
+
+/*--------------------------------------------------------------------- import Files ---------------------------------------------------------------------*/
+
+@import url(animate.min.css);
+
+/*--------------------------------------------------------------------- skeleton ---------------------------------------------------------------------*/
+
+* {
+  box-sizing: border-box !important;
+  transition: ease all 0.2s;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  color: #666666;
+  font-size: 14px;
+  line-height: 1.80857;
+  font-weight: normal;
+  overflow-x: hidden;
+}
+.layout_padding {
+  padding-bottom: 80px;
+  padding-top: 80px;
+}
+
+.car_section {
+  width: 100%;
+  float: left;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 113%;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.col-lg-12 {
+  z-index: 10;
+}
+
+.filter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.filter_box {
+  width: 72%;
+  background-color: white;
+  height: auto;
+  padding: 80px 50px;
+  position: relative;
+  box-shadow: 0px 0px 8px 0px;
+  border-radius: 10px;
+  margin-top: -150px;
+}
+.firstcol {
+  margin-top: -90px;
+}
+.colw {
+  width: 400px;
+}
+
+.filter_element {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+h3 {
+  font-size: 2rem;
+  font-weight: 800;
+  color: black;
+}
+
+p {
+  font-size: medium;
+  font-weight: 700;
+  color: black;
+}
+.chamelh3 {
+  margin-left: 30px;
+}
+
+.img_box {
+  margin-top: 5%;
+}
+
+.voorleft {
+  margin-left: -25px;
+}
+/*--------------------------------------------------- button ---------------------------------------------*/
+.type_button {
+  background: unset;
+  border: unset;
+  font-size: 1.5rem;
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+.vanaf_b-stijl {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: unset;
+  width: 100%;
+}
+
+li {
+  float: left;
+  list-style-type: none;
+  padding-bottom: 3px;
+  box-sizing: border-box !important;
+}
+
+li a {
+  box-sizing: border-box !important;
+  width: 100%;
+  display: block;
+  font-size: x-large;
+  font-weight: 600;
+  color: rgb(255, 255, 255) !important;
+  text-align: center;
+  padding: 2px 7px;
+  text-decoration: none;
+  cursor: default;
+}
+.voor_button65 {
+  margin-right: 5px;
+}
+.voor_button {
+  color: white;
+  border: unset;
+}
+
+.voorraam {
+  margin-top: 52px;
+}
+
+.voorraam_button {
+  color: white;
+  border: unset;
+}
+.voorramh3 {
+  margin-left: -15px;
+}
+.chamel_p {
+  margin-left: 30px;
+}
+.kleur_button {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  border: unset;
+  margin-right: 5px;
+}
+
+.bottom {
+  position: absolute;
+  margin-top: 20px;
+}
+
+.chameleon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.chameleon_button {
+  width: 80%;
+  height: 50px;
+  margin-top: 10px;
+  font-weight: 900;
+  color: white;
+  background-size: cover;
+  border-radius: 3px;
+  border: unset;
+  font-size: x-large;
+}
+
+button:focus {
+  outline: none;
+}
+
+.voor769 {
+  min-width: 100px;
+}
+.down {
+  min-width: 262px;
+}
+/* ----------------------------------------------------------------- image order --------------------------------------------------------------------------------------- */
+
+.brg {
+  position: absolute;
+  z-index: -10;
+}
+
+#carSort {
+  position: absolute;
+  z-index: 99;
+  transition: opacity 1.5s ease;
+}
+
+#suvSort {
+  position: absolute;
+  z-index: 100;
+  transition: opacity 1.5s ease;
+}
+
+.layer1 {
+  position: absolute;
+  z-index: 101;
+  transition: opacity 1.5s ease;
+}
+
+.layer2 {
+  position: absolute;
+  z-index: 102;
+  transition: opacity 1.5s ease;
+}
+
+.layer3 {
+  position: absolute;
+  z-index: 103;
+  transition: opacity 1.5s ease;
+}
+.layer4 {
+  position: absolute;
+  z-index: 104;
+}
+.layer5 {
+  position: absolute;
+  z-index: 105;
+  transition: opacity 1.5s ease;
+}
+.layer6 {
+  position: absolute;
+  z-index: 106;
+  transition: opacity 1.5s ease;
+}
+.layer7 {
+  position: absolute;
+  z-index: 107;
+  transition: opacity 1.5s ease;
+}
+.layer8 {
+  position: absolute;
+  z-index: 108;
+  transition: opacity 1.5s ease;
+}
+.layer9 {
+  position: absolute;
+  z-index: 109;
+  transition: opacity 1.5s ease;
+}
+.layer10 {
+  position: absolute;
+  z-index: 110;
+  transition: opacity 1.5s ease;
+}
+.layer11 {
+  position: absolute;
+  z-index: 111;
+  transition: opacity 1.5s ease;
+}
+.layer12 {
+  position: absolute;
+  z-index: 112;
+  transition: opacity 1.5s ease;
+}
+.layer13 {
+  position: absolute;
+  z-index: 113;
+  transition: opacity 1.5s ease;
+}
+.layer14 {
+  position: absolute;
+  z-index: 114;
+}
+.layer15 {
+  position: absolute;
+  z-index: 115;
+}
+.layer16 {
+  position: absolute;
+  z-index: 116;
+}
+.layer17 {
+  z-index: 117;
+}
+
+/* -------------------------------------------------------------------------- image map ------------------------------------------- */
+#area7 {
+  margin-left: 80%;
+  margin-top: 4%;
+  width: 12%;
+}
+#area6 {
+  margin-left: 68%;
+  margin-top: 4%;
+  width: 12%;
+}
+#area5 {
+  margin-left: 50%;
+  margin-top: 4%;
+  width: 18%;
+}
+#area3 {
+  margin-left: 34%;
+  margin-top: 3%;
+  width: 14%;
+}
+#area2 {
+  margin-left: 21%;
+  margin-top: 2%;
+  width: 13%;
+}
+#area1 {
+  margin-left: 3%;
+  margin-top: 2%;
+  width: 13%;
+}
+#area11 {
+  margin-left: 3%;
+  margin-top: 2%;
+  width: 13%;
+}
+#area22 {
+  margin-left: 20%;
+  margin-top: 2%;
+  width: 13%;
+}
+#area33 {
+  margin-left: 83%;
+  margin-top: 2%;
+  width: 13%;
+}
+#area44 {
+  margin-left: 33%;
+  margin-top: 2%;
+  width: 13%;
+}
+#area55 {
+  margin-left: 68%;
+  margin-top: 2%;
+  width: 14%;
+}
+#area66 {
+  margin-left: 51%;
+  margin-top: 2%;
+  width: 17%;
+}
